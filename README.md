@@ -1,2 +1,2 @@
 # flask-rest-pylearn
-Flask RESTFUL project as tutorial to write restfulcrud 
+Flask RESTful project as tutorial to write restful crud 

@@ -28,3 +28,13 @@ class ToDo:
     priority: ToDoPriority = ToDoPriority.NORMAL
     status: ToDoStatus = ToDoStatus.NEW
 
+    def as_jsonable_dict(self):
+        todo_dict = {
+            'title': self.title,
+            'description': self.description,
+            'due_date': self.due_date.isoformat() if self.due_date else None,
+            'priority': self.priority.value,
+            'status': self.status.value,
+        }
+
+        return todo_dict
